@@ -13,6 +13,7 @@ export default defineConfig<'rspack'>({
     },
   },
   html: {
+    title: 'resume',
     disableHtmlFolder: true,
   },
   runtime: {

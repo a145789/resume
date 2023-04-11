@@ -1,4 +1,3 @@
-import { Helmet } from '@modern-js/runtime/head';
 import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';
 import 'tailwindcss/utilities.css';
@@ -25,9 +24,6 @@ const Index = () => {
 
   return (
     <>
-      <Helmet>
-        <title>resume</title>
-      </Helmet>
       <Toaster
         toastOptions={{
           className: '!rounded',
@@ -35,23 +31,23 @@ const Index = () => {
       />
       <div className="w-full h-full overflow-y-auto bg-[#eee]">
         <div className="md:w-[60%] md:mx-auto">
-          <header className="p-[30px] bg-[#00bc8a] text-[#fff] flex flex-col justify-center items-center">
+          <div className="p-[30px] bg-[#00bc8a] text-[#fff] flex flex-col justify-center items-center">
             <div className="py-2 px-4 text-[36px] font-[500]">孟国栋</div>
 
             <div className="text-[22px] py-2 px-4 border-solid border-t-[1px] border-[#00a982]">
               前端开发工程师
             </div>
 
-            <ul className="border-solid border-t-[1px] border-[#00a982] font-[18px] flex flex-col items-center mt-2">
+            <div className="border-solid border-t-[1px] border-[#00a982] font-[18px] flex flex-col items-center mt-2">
               {information.map(item => (
-                <li
+                <div
                   className="my-0.5 flex items-center"
                   key={typeof item === 'string' ? item : item.key}
                 >
                   {item}
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
 
             <div className="flex mt-1">
               <a
@@ -73,9 +69,9 @@ const Index = () => {
                 <HomePageIcon size="22" fill="#fff" />
               </a>
             </div>
-          </header>
+          </div>
 
-          <main className="w-full flex flex-wrap bg-[#fff] pt-4">
+          <div className="w-full flex flex-wrap bg-[#fff] pt-4">
             <SectionBox title="工作经历" pcMode="half">
               <Steps direction="vertical" items={workExperience} />
             </SectionBox>
@@ -109,7 +105,7 @@ const Index = () => {
                 ))}
               </div>
             </SectionBox>
-          </main>
+          </div>
         </div>
       </div>
     </>

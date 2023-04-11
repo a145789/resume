@@ -13,11 +13,9 @@ export default function SectionBox({
   children,
 }: Props) {
   return (
-    <section
-      className={clsx('w-full px-8 mb-4', pcMode === 'half' && 'md:w-1/2')}
-    >
+    <div className={clsx('w-full px-8 mb-4', pcMode === 'half' && 'md:w-1/2')}>
       <div className="text-[22px] font-[500] py-2">{title}</div>
       <div className="mt-2">{children}</div>
-    </section>
+    </div>
   );
 }
