@@ -74,7 +74,8 @@
     "enableInlineScripts": false,
     "enableInlineStyles": false,
     "disableNodePolyfill": true,
-    "ssg": true
+    "ssg": true,
+    "assetPrefix": "./"
   },
   "server": {
     "baseUrl": "/",
@@ -183,6 +184,7 @@
     "output": {
       "ssg": true,
       "disableSourceMap": true,
+      "assetPrefix": "./",
       "distPath": {
         "html": ""
       }
