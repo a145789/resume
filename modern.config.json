@@ -94,7 +94,7 @@
     "mountId": "root",
     "crossorigin": false,
     "disableHtmlFolder": true,
-    "title": "",
+    "title": "resume",
     "meta": {
       "charset": {
         "charset": "utf-8"
@@ -190,6 +190,7 @@
       }
     },
     "html": {
+      "title": "resume",
       "disableHtmlFolder": true
     },
     "runtime": {
