@@ -7,6 +7,7 @@ export default defineConfig<'rspack'>({
   output: {
     ssg: true,
     disableSourceMap: true,
+    assetPrefix: './',
     distPath: {
       html: '',
     },
