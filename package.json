@@ -10,6 +10,7 @@
     "new": "modern new",
     "lint": "modern lint",
     "prepare": "husky install",
+    "deploy": "pnpm build && gh-pages -d dist",
     "upgrade": "modern upgrade"
   },
   "engines": {
@@ -28,24 +29,34 @@
     "dist/"
   ],
   "dependencies": {
+    "@modern-js/plugin-tailwindcss": "2.12.0",
     "@modern-js/runtime": "2.12.0",
+    "clsx": "^1.2.1",
+    "rc-progress": "^3.4.1",
+    "rc-steps": "^6.0.0",
     "react": "~18.2.0",
-    "react-dom": "~18.2.0"
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "~18.2.0",
+    "react-hot-toast": "^2.4.0"
   },
   "devDependencies": {
-    "@modern-js/app-tools": "2.12.0",
-    "@modern-js/eslint-config": "2.12.0",
-    "@modern-js/tsconfig": "2.12.0",
     "@modern-js-app/eslint-config": "2.12.0",
-    "lint-staged": "~13.1.0",
-    "prettier": "~2.8.1",
-    "husky": "~8.0.1",
-    "rimraf": "~3.0.2",
-    "typescript": "~4.9.4",
+    "@modern-js/app-tools": "2.12.0",
+    "@modern-js/builder-rspack-provider": "2.12.0",
+    "@modern-js/eslint-config": "2.12.0",
+    "@modern-js/plugin-ssg": "2.12.0",
+    "@modern-js/tsconfig": "2.12.0",
     "@types/jest": "~29.2.4",
     "@types/node": "~16.11.7",
     "@types/react": "~18.0.26",
+    "@types/react-copy-to-clipboard": "^5.0.4",
     "@types/react-dom": "~18.0.10",
-    "@modern-js/builder-rspack-provider": "2.12.0"
+    "gh-pages": "^5.0.0",
+    "husky": "~8.0.1",
+    "lint-staged": "~13.1.0",
+    "prettier": "~2.8.1",
+    "rimraf": "~3.0.2",
+    "tailwindcss": "~3.2.4",
+    "typescript": "~4.9.4"
   }
 }
