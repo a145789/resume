@@ -12,8 +12,11 @@ import SectionBox from '@/components/section-box';
 import useResume from '@/hooks/useResume';
 import Progress from '@/components/progress';
 import Project from '@/components/project';
+import useIsSsr from '@/hooks/useIsSsr';
 
 const Index = () => {
+  const isSsr = useIsSsr();
+
   const {
     information,
     educational,
@@ -22,6 +25,10 @@ const Index = () => {
     skillRating,
     projects,
   } = useResume();
+
+  if (isSsr) {
+    return null;
+  }
 
   return (
     <>
@@ -43,8 +50,11 @@ const Index = () => {
             </div>
 
             <ul className="border-solid border-t-[1px] border-[#00a982] font-[18px] flex flex-col items-center mt-2">
-              {information.map((item, index) => (
-                <li className="my-0.5 flex items-center" key={index}>
+              {information.map(item => (
+                <li
+                  className="my-0.5 flex items-center"
+                  key={typeof item === 'string' ? item : item.key}
+                >
                   {item}
                 </li>
               ))}

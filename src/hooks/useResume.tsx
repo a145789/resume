@@ -1,6 +1,7 @@
 import type { StepProps } from 'rc-steps/lib/Step';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import toast from 'react-hot-toast';
+import { Fragment } from 'react';
 import CompanyIcon from '@/components/company-icon';
 import EducationalIcon from '@/components/educational-icon';
 import type { ProjectProps } from '@/components/project';
@@ -20,13 +21,13 @@ export default function useResume() {
   /** 个人信息 */
   const information = [
     '男 / 1998 · 7',
-    <>
+    <Fragment key="phone">
       手机：{phone}
       <CopyToClipboard text={phone} onCopy={copyToast}>
         <CopyIcon size="20" fill="#eee" className="ml-2 cursor-pointer" />
       </CopyToClipboard>
-    </>,
-    <>
+    </Fragment>,
+    <Fragment key="email">
       邮箱：
       <a href={`mailto:${email}`} className="text-blue-600">
         {email}
@@ -34,7 +35,7 @@ export default function useResume() {
       <CopyToClipboard text={email} onCopy={copyToast}>
         <CopyIcon size="20" fill="#eee" className="ml-2 cursor-pointer" />
       </CopyToClipboard>
-    </>,
+    </Fragment>,
   ];
 
   /** 教育背景 */
