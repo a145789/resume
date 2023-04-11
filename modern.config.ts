@@ -6,6 +6,13 @@ import ssgPlugin from '@modern-js/plugin-ssg';
 export default defineConfig<'rspack'>({
   output: {
     ssg: true,
+    disableSourceMap: true,
+    distPath: {
+      html: '',
+    },
+  },
+  html: {
+    disableHtmlFolder: true,
   },
   runtime: {
     router: true,
