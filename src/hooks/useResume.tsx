@@ -22,13 +22,13 @@ export default function useResume() {
   const information = [
     '男 / 1998 · 7',
     <Fragment key="phone">
-      手机：{phone}
+      <span>手机：{phone}</span>
       <CopyToClipboard text={phone} onCopy={copyToast}>
         <CopyIcon size="20" fill="#eee" className="ml-2 cursor-pointer" />
       </CopyToClipboard>
     </Fragment>,
     <Fragment key="email">
-      邮箱：
+      <span>邮箱：</span>
       <a href={`mailto:${email}`} className="text-blue-600">
         {email}
       </a>

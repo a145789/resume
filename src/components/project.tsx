@@ -15,7 +15,6 @@ export default function Project({
   introduction,
   highlights,
 }: ProjectProps) {
-  const label = (str: string) => <span className="font-bold">{str}</span>;
   return (
     <div className="mb-3 p-2">
       <div className="mb-2 text-[20px] font-bold">
@@ -34,22 +33,22 @@ export default function Project({
       </div>
       {time && <div className="mb-2 text-[12px] text-[#aaa]">{time}</div>}
       <div className="mb-2">
-        {label('项目简介：')}
-        {introduction}
+        <span className="font-bold">项目简介：</span>
+        <span>{introduction}</span>
       </div>
       {stack && (
         <div className="mb-2">
-          {label('技术栈：')}
-          {stack}
+          <span className="font-bold">技术栈：</span>
+          <span>{stack}</span>
         </div>
       )}
       {highlights && (
         <>
-          <div className="mb-1">{label('技术亮点：')}</div>
+          <div className="mb-1 font-bold">技术亮点：</div>
           <ul>
             {highlights.map((item, index) => (
               <li key={item} className="mb-1.5">
-                {index + 1}. {item}
+                {index + 1}.&nbsp;{item}
               </li>
             ))}
           </ul>
