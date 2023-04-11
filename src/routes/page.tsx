@@ -12,11 +12,8 @@ import SectionBox from '@/components/section-box';
 import useResume from '@/hooks/useResume';
 import Progress from '@/components/progress';
 import Project from '@/components/project';
-import useIsSsr from '@/hooks/useIsSsr';
 
 const Index = () => {
-  const isSsr = useIsSsr();
-
   const {
     information,
     educational,
@@ -25,10 +22,6 @@ const Index = () => {
     skillRating,
     projects,
   } = useResume();
-
-  if (isSsr) {
-    return null;
-  }
 
   return (
     <>

@@ -44,14 +44,16 @@ export default function Project({
         </div>
       )}
       {highlights && (
-        <ul>
+        <>
           <div className="mb-1">{label('技术亮点：')}</div>
-          {highlights.map((item, index) => (
-            <li key={item} className="mb-1.5">
-              {index + 1}. {item}
-            </li>
-          ))}
-        </ul>
+          <ul>
+            {highlights.map((item, index) => (
+              <li key={item} className="mb-1.5">
+                {index + 1}. {item}
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </div>
   );
