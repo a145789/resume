@@ -6,13 +6,13 @@
   "runtimeByEntries": {},
   "source": {
     "alias": {
-      "styled-components": "D:\\workpack_2\\resume\\node_modules\\.pnpm\\registry.npmjs.org+styled-components@5.3.9_react-dom@18.2.0_react-is@18.2.0_react@18.2.0\\node_modules\\styled-components\\dist\\styled-components.cjs.js",
-      "@modern-js/runtime/plugins": "D:\\workpack_2\\resume\\node_modules\\.modern-js\\.runtime-exports\\plugins.js",
-      "@modern-js/utils/ssr": "D:\\workpack_2\\resume\\node_modules\\.pnpm\\registry.npmjs.org+@modern-js+utils@2.12.0_react-dom@18.2.0_react-router-dom@6.10.0_react@18.2.0\\node_modules\\@modern-js\\utils\\dist\\ssr.js",
-      "@_modern_js_internal": "D:\\workpack_2\\resume\\node_modules\\.modern-js",
-      "@_modern_js_src": "D:\\workpack_2\\resume\\src",
-      "@": "D:\\workpack_2\\resume\\src",
-      "@shared": "D:\\workpack_2\\resume\\shared"
+      "styled-components": "/home/runner/work/resume/resume/node_modules/.pnpm/registry.npmjs.org+styled-components@5.3.9_react-dom@18.2.0_react-is@18.2.0_react@18.2.0/node_modules/styled-components/dist/styled-components.cjs.js",
+      "@modern-js/runtime/plugins": "/home/runner/work/resume/resume/node_modules/.modern-js/.runtime-exports/plugins.js",
+      "@modern-js/utils/ssr": "/home/runner/work/resume/resume/node_modules/.pnpm/registry.npmjs.org+@modern-js+utils@2.12.0_react-dom@18.2.0_react-router-dom@6.10.0_react@18.2.0/node_modules/@modern-js/utils/dist/ssr.js",
+      "@_modern_js_internal": "/home/runner/work/resume/resume/node_modules/.modern-js",
+      "@_modern_js_src": "/home/runner/work/resume/resume/src",
+      "@": "/home/runner/work/resume/resume/src",
+      "@shared": "/home/runner/work/resume/resume/shared"
     },
     "globalVars": {
       "process.env.IS_REACT18": "true"
@@ -25,7 +25,7 @@
     "entriesDir": "./src",
     "configDir": "./config",
     "include": [
-      "D:\\workpack_2\\resume\\node_modules\\.modern-js"
+      "/home/runner/work/resume/resume/node_modules/.modern-js"
     ]
   },
   "tools": {
@@ -41,7 +41,7 @@
       "css": "static/css",
       "svg": "static/svg",
       "font": "static/font",
-      "html": "html",
+      "html": "",
       "wasm": "static/wasm",
       "image": "static/image",
       "media": "static/media",
@@ -62,9 +62,7 @@
     "svgDefaultExport": "url",
     "disableCssExtract": false,
     "disableMinimize": false,
-    "disableSourceMap": {
-      "js": false
-    },
+    "disableSourceMap": true,
     "disableTsChecker": false,
     "disableFilenameHash": false,
     "disableCssModuleExtension": false,
@@ -94,7 +92,7 @@
     "inject": "head",
     "mountId": "root",
     "crossorigin": false,
-    "disableHtmlFolder": false,
+    "disableHtmlFolder": true,
     "title": "",
     "meta": {
       "charset": {
@@ -183,7 +181,14 @@
   "builderPlugins": [],
   "_raw": {
     "output": {
-      "ssg": true
+      "ssg": true,
+      "disableSourceMap": true,
+      "distPath": {
+        "html": ""
+      }
+    },
+    "html": {
+      "disableHtmlFolder": true
     },
     "runtime": {
       "router": true

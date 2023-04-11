@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/main.63f2686e.js","sources":["src\\routes\\layout.tsx"],"sourcesContent":["import { Outlet } from '@modern-js/runtime/router';\n\nexport default function Layout() {\n  return <Outlet />;\n}\n"],"names":["Layout","Outlet"],"mappings":"oLAEA,W,oCAAwBA,C,kCAAT,SAASA,GAAS,CAC/B,MAAO,UAAC,EAAAC,MAAM,IAChB,C"}

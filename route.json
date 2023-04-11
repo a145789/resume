@@ -3,7 +3,7 @@
     {
       "urlPath": "/",
       "entryName": "main",
-      "entryPath": "html\\main/index.html",
+      "entryPath": "./index.html",
       "isSPA": true,
       "isSSR": false
     }
