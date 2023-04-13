@@ -48,7 +48,7 @@ export default function Project({
           <ul>
             {highlights.map((item, index) => (
               <li key={item} className="mb-1.5">
-                {index + 1}&nbsp;{item}
+                {index + 1}.&nbsp;{item}
               </li>
             ))}
           </ul>

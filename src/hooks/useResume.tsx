@@ -42,13 +42,13 @@ export default function useResume() {
   const educational: StepProps[] = [
     {
       title: '山东电子职业技术学院',
-      subTitle: '2016/9 - 2019-7',
+      subTitle: '2016/9 - 2019/7',
       description: '计算机科学与技术',
       icon: <EducationalIcon />,
     },
     {
       title: '西安工业大学（函授）',
-      subTitle: '2021/4 - 2023-7',
+      subTitle: '2021/4 - 2023/7',
       description: '计算机科学与技术',
       icon: <EducationalIcon />,
     },
