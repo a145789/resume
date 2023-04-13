@@ -32,7 +32,28 @@
     "babel": [
       null,
       null
-    ]
+    ],
+    "cssExtract": {
+      "loaderOptions": {},
+      "pluginOptions": {}
+    },
+    "tsChecker": {
+      "issue": {
+        "include": [
+          {
+            "file": "**/src/**/*"
+          }
+        ],
+        "exclude": [
+          {
+            "file": "**/*.(spec|test).ts"
+          },
+          {
+            "file": "**/node_modules/**/*"
+          }
+        ]
+      }
+    }
   },
   "output": {
     "distPath": {
@@ -50,7 +71,7 @@
     },
     "filename": {},
     "charset": "ascii",
-    "polyfill": "entry",
+    "polyfill": "off",
     "dataUriLimit": {
       "svg": 10000,
       "font": 10000,
@@ -177,6 +198,9 @@
         "@modern-js/plugin-server",
         "@modern-js/plugin-bff"
       ]
+    },
+    {
+      "name": "@modern-js/plugin-swc"
     }
   ],
   "builderPlugins": [],
@@ -187,7 +211,8 @@
       "assetPrefix": "./",
       "distPath": {
         "html": ""
-      }
+      },
+      "polyfill": "off"
     },
     "html": {
       "title": "resume",
@@ -199,11 +224,14 @@
     "plugins": [
       "[Circular 0]",
       "[Circular 1]",
-      "[Circular 2]"
-    ]
+      "[Circular 2]",
+      "[Circular 3]"
+    ],
+    "tools": {}
   },
   "bff": {},
   "testing": {},
   "deploy": {},
-  "performance": {}
+  "performance": {},
+  "security": {}
 }
