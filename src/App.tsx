@@ -102,7 +102,7 @@ const App = () => {
               </ul>
             </SectionBox>
 
-            <SectionBox title="技术技能">
+            <SectionBox title="项目经历">
               {projects.map(item => (
                 <Project key={item.name} {...item} />
               ))}

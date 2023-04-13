@@ -10,7 +10,7 @@
     "new": "modern new",
     "lint": "modern lint",
     "prepare": "husky install",
-    "deploy": "pnpm build && gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "upgrade": "modern upgrade"
   },
   "engines": {
