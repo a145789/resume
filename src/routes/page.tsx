@@ -4,6 +4,7 @@ import 'tailwindcss/utilities.css';
 import './index.css';
 import { Toaster } from 'react-hot-toast';
 import Steps from 'rc-steps';
+import resumePdf from '../assets/resume.pdf';
 import GithubIcon from '@/components/github-icon';
 import HomePageIcon from '@/components/home-page-icon';
 import 'rc-steps/assets/index.css';
@@ -11,6 +12,7 @@ import SectionBox from '@/components/section-box';
 import useResume from '@/hooks/useResume';
 import Progress from '@/components/progress';
 import Project from '@/components/project';
+import DownloadIcon from '@/components/download-icon';
 
 const Index = () => {
   const {
@@ -67,6 +69,16 @@ const Index = () => {
                 className="mx-1.5"
               >
                 <HomePageIcon size="22" fill="#fff" />
+              </a>
+
+              <a
+                href={resumePdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="download resume pdf"
+                className="mx-1.5"
+              >
+                <DownloadIcon size="22" fill="#fff" />
               </a>
             </div>
           </div>

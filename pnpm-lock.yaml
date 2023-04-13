@@ -69,6 +69,9 @@ devDependencies:
   '@types/react-dom':
     specifier: ~18.0.10
     version: registry.npmjs.org/@types/react-dom@18.0.10
+  file-loader:
+    specifier: ^6.2.0
+    version: registry.npmjs.org/file-loader@6.2.0(webpack@5.78.0)
   gh-pages:
     specifier: ^5.0.0
     version: registry.npmjs.org/gh-pages@5.0.0
@@ -7018,6 +7021,20 @@ packages:
     engines: {node: ^10.12.0 || >=12.0.0}
     dependencies:
       flat-cache: registry.npmjs.org/flat-cache@3.0.4
+    dev: true
+
+  registry.npmjs.org/file-loader@6.2.0(webpack@5.78.0):
+    resolution: {integrity: sha512-qo3glqyTa61Ytg4u73GultjHGjdRyig3tG6lPtyX/jOEJvHif9uB0/OCI2Kif6ctF3caQTW2G5gym21oAsI4pw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/file-loader/-/file-loader-6.2.0.tgz}
+    id: registry.npmjs.org/file-loader/6.2.0
+    name: file-loader
+    version: 6.2.0
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      webpack: ^4.0.0 || ^5.0.0
+    dependencies:
+      loader-utils: registry.npmjs.org/loader-utils@2.0.4
+      schema-utils: registry.npmjs.org/schema-utils@3.1.1
+      webpack: registry.npmjs.org/webpack@5.78.0(esbuild@0.15.7)
     dev: true
 
   registry.npmjs.org/filename-reserved-regex@2.0.0:

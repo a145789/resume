@@ -4,7 +4,7 @@ import ssgPlugin from '@modern-js/plugin-ssg';
 import swcPlugin from '@modern-js/plugin-swc';
 
 // https://modernjs.dev/en/configure/app/usage
-export default defineConfig<'rspack'>({
+export default defineConfig({
   output: {
     ssg: true,
     disableSourceMap: true,
@@ -22,4 +22,12 @@ export default defineConfig<'rspack'>({
     router: true,
   },
   plugins: [appTools(), tailwindCSSPlugin(), ssgPlugin(), swcPlugin()],
+  tools: {
+    webpack: (_, { addRules }) => {
+      addRules({
+        test: /\.pdf$/,
+        use: ['file-loader'],
+      });
+    },
+  },
 });
