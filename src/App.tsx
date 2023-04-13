@@ -4,7 +4,7 @@ import 'tailwindcss/utilities.css';
 import './index.css';
 import { Toaster } from 'react-hot-toast';
 import Steps from 'rc-steps';
-import resumePdf from '../assets/resume.pdf';
+import resumePdf from '@/assets/resume.pdf';
 import GithubIcon from '@/components/github-icon';
 import HomePageIcon from '@/components/home-page-icon';
 import 'rc-steps/assets/index.css';
@@ -14,7 +14,7 @@ import Progress from '@/components/progress';
 import Project from '@/components/project';
 import DownloadIcon from '@/components/download-icon';
 
-const Index = () => {
+const App = () => {
   const {
     information,
     educational,
@@ -124,4 +124,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default App;

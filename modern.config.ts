@@ -19,7 +19,7 @@ export default defineConfig({
     disableHtmlFolder: true,
   },
   runtime: {
-    router: true,
+    router: false,
   },
   plugins: [appTools(), tailwindCSSPlugin(), ssgPlugin(), swcPlugin()],
   tools: {
