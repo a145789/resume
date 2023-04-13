@@ -2,29 +2,29 @@ import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';
 import 'tailwindcss/utilities.css';
 import './index.css';
-// import { Toaster } from 'react-hot-toast';
-// import Steps from 'rc-steps';
-// import GithubIcon from '@/components/github-icon';
-// import HomePageIcon from '@/components/home-page-icon';
-// import 'rc-steps/assets/index.css';
-// import SectionBox from '@/components/section-box';
-// import useResume from '@/hooks/useResume';
-// import Progress from '@/components/progress';
-// import Project from '@/components/project';
+import { Toaster } from 'react-hot-toast';
+import Steps from 'rc-steps';
+import GithubIcon from '@/components/github-icon';
+import HomePageIcon from '@/components/home-page-icon';
+import 'rc-steps/assets/index.css';
+import SectionBox from '@/components/section-box';
+import useResume from '@/hooks/useResume';
+import Progress from '@/components/progress';
+import Project from '@/components/project';
 
 const Index = () => {
-  // const {
-  //   information,
-  //   educational,
-  //   skills,
-  //   workExperience,
-  //   skillRating,
-  //   projects,
-  // } = useResume();
+  const {
+    information,
+    educational,
+    skills,
+    workExperience,
+    skillRating,
+    projects,
+  } = useResume();
 
   return (
     <>
-      {/* <Toaster
+      <Toaster
         toastOptions={{
           className: '!rounded',
         }}
@@ -107,8 +107,7 @@ const Index = () => {
             </SectionBox>
           </div>
         </div>
-      </div> */}
-      <div>123</div>
+      </div>
     </>
   );
 };
