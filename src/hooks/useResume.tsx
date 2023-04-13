@@ -58,19 +58,19 @@ export default function useResume() {
   const workExperience: StepProps[] = [
     {
       title: '纬创软件有限公司',
-      subTitle: '2021/9 - 2023-3',
+      subTitle: '2021/9 - 2023/3',
       description: '前端工程师',
       icon: <CompanyIcon />,
     },
     {
       title: '上海微创软件股份有限公司',
-      subTitle: '2021/3 - 2021-9',
+      subTitle: '2021/3 - 2021/9',
       description: '前端工程师',
       icon: <CompanyIcon />,
     },
     {
       title: '杨凌农业云',
-      subTitle: '2019/9 - 2021-2',
+      subTitle: '2019/9 - 2021/2',
       description: '前端工程师',
       icon: <CompanyIcon />,
     },
