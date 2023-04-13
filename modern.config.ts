@@ -29,5 +29,8 @@ export default defineConfig({
         use: ['file-loader'],
       });
     },
+    htmlPlugin: {
+      filename: 'index.html',
+    },
   },
 });
