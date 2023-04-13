@@ -1,7 +1,7 @@
 {
   "autoLoadPlugins": false,
   "runtime": {
-    "router": true
+    "router": false
   },
   "runtimeByEntries": {},
   "source": {
@@ -219,7 +219,7 @@
       "disableHtmlFolder": true
     },
     "runtime": {
-      "router": true
+      "router": false
     },
     "plugins": [
       "[Circular 0]",
