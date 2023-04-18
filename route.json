@@ -1,9 +1,9 @@
 {
   "routes": [
     {
-      "urlPath": "/",
-      "entryName": "main",
-      "entryPath": "main.html",
+      "urlPath": "/index",
+      "entryName": "index",
+      "entryPath": "index.html",
       "isSPA": true,
       "isSSR": false
     }
