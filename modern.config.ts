@@ -33,4 +33,10 @@ export default defineConfig({
       filename: 'index.html',
     },
   },
+  source: {
+    entries: {
+      index: './src/App.tsx',
+    },
+    disableDefaultEntries: true,
+  },
 });
