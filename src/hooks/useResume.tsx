@@ -78,12 +78,15 @@ export default function useResume() {
 
   /** 技术技能 */
   const skills = [
-    '熟练掌握 Vue2、Vue3 前端框架以及相关的全家桶，可以基于全家桶构建通用前端框架，封装通用组件',
-    '熟练使用 React Hooks、TypeScript 开发后台、H5 项目',
+    '熟练掌握 HTML、CSS、JavaScript 等前端端基础知识',
+    '熟练掌握 Vue2、Vue3 全家桶，深入了解 Vue3 响应式源码',
+    '熟练使用 React 全家桶开发后台、H5 项目',
+    '熟练掌握 TypeScript ，能够应对复杂的类型体系',
     '熟练使用 ElementUI，VantUI，Arco Design 等 PC、移动端 UI 框架，熟悉 TailwindCss UnoCss 等 CSS 框架',
-    '熟悉 VIte、Webpack 等构建工具',
-    'Varlet UI 贡献者，独立开发 Link 组件，参与开发 Input 、Select 组件开发',
-    '了解 Node.js Koa mongodb 等技术栈',
+    '熟悉 Vite、Webpack 等构建工具，了解 Vite 插件编写流程',
+    '了解 Node.js，具备编写各类脚本和开发 Node.js 库的经验',
+    '了解 Koa mongodb 等技术栈',
+    '有小程序开发经验，熟悉小程序开发流程',
   ];
 
   /** 技能评分 */
@@ -122,31 +125,28 @@ export default function useResume() {
     {
       name: '大数据模型管理系统',
       time: '2021 年 9 月 – 2023 年 3 月',
-      stack:
-        'Vue2 + Composition-API + Vue Class + Vue Router + Pinia + Vite + Tailwindcss + TypeScript',
+      stack: 'Vue2 + Composition-API + Pinia + Vite + Tailwindcss + TypeScript',
       introduction:
         '用于大数据模型代码调试，纠错，试运行以及维护，模型上线审核，批量发布等功能。',
       highlights: [
         '引入 unplugin-auto-import unplugin-vue-components 减少重复代码，解决了 unplugin-auto-import import 顺序不一致无法正确解析的问题。',
         '封装 sortablejs 为 hooks 方便使用。',
-        '封装文字自适应展示 Tootip 组件，配合业务。',
-        '解决迁移 Vue Class 迁移 Vite 组件时 Typescript 对 class 兼容。',
-        '使用 node.js 封装 rebase merge 脚本快速 合并分支，提高开发效率。',
-        '日常代码开发及维护。',
+        '使用 Selection API 封装文字溢出时展示 Tooltip 组件。',
+        '解决 Vue Class 迁移至 Vite 时， Typescript 对 Class 兼容问题。',
+        '使用 node.js 封装 rebase merge 脚本快速 合并分支，相对于手动合并提高了50%的开发效率。',
       ],
     },
     {
       name: '抖音青少年运营后台+家长后台周报',
       time: '2021 年 3 月 – 2021 年 9 月',
-      stack: 'React Hook + React Router + Typescript + Reduck+ Arco Design',
+      stack: 'React Hook + Typescript + Reduck + Arco Design',
       introduction:
-        '满足运营人员对抖音青少年内容整合封发。划分频道推送，行为记录。对相关视频定制化整理。动态周报服务于家长对于孩子每周使用青少年模式的详细总结。',
+        '满足运营人员对抖音青少年内容整合分发。划分频道推送，行为记录。对相关视频定制化整理。动态周报服务于家长对于孩子每周使用青少年模式的详细总结。',
       highlights: [
         '独立维护及开发项目。',
-        '编写脚本实现自动化生成业务模板，提高开发效率。',
+        '编写脚本实现自动化生成业务模板，减少重复工作，提高了30%的开发效率。',
         '优化 Context 使用，减少组件遍历次数。',
-        '封装通用 Table 组件。',
-        '解决单路由页面退出埋点功能',
+        '监听浏览器关闭事件时，单路由页面退出埋点请求不一定会准确发送，设计了一个中转页面桥接。',
       ],
     },
     {
@@ -158,16 +158,6 @@ export default function useResume() {
         '使用 SWC 作为 parse 工具，速度更快，支持单文件转换及多文件批量转换。',
         '解决 Rust 与 Node 对 Unicode 字符长度不一致问题导致转换失败问题。',
         '核心代码无关 Node 暴露核心 API 可在 Node 以及 浏览器中使用。',
-      ],
-    },
-    {
-      name: 'Varlet UI',
-      url: 'https://github.com/varletjs/varlet',
-      introduction:
-        'Varlet 是一个基于 Vue3 开发的 Material 风格移动端组件库，全面拥抱 Vue3 生态，由 varletjs 社区团队进行维护。',
-      highlights: [
-        '独立开发 Link 组件。',
-        '开发 Input 、Select outlined 模式。',
       ],
     },
   ];
