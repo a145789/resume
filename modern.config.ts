@@ -1,6 +1,6 @@
 import appTools, { defineConfig } from '@modern-js/app-tools';
 import tailwindCSSPlugin from '@modern-js/plugin-tailwindcss';
-import ssgPlugin from '@modern-js/plugin-ssg';
+import ssg from '@modern-js/plugin-ssg';
 import swcPlugin from '@modern-js/plugin-swc';
 
 // https://modernjs.dev/en/configure/app/usage
@@ -32,7 +32,7 @@ export default defineConfig(({ env }) => {
     runtime: {
       router: false,
     },
-    plugins: [appTools(), tailwindCSSPlugin(), ssgPlugin(), swcPlugin()],
+    plugins: [appTools(), tailwindCSSPlugin(), ssg(), swcPlugin()],
     tools: {
       webpack: (_, { addRules }) => {
         addRules({
