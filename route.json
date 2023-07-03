@@ -5,6 +5,7 @@
       "entryName": "index",
       "entryPath": "index.html",
       "isSPA": true,
+      "isStream": false,
       "isSSR": false
     }
   ]

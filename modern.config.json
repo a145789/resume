@@ -8,37 +8,41 @@
     "alias": {
       "styled-components": "/home/runner/work/resume/resume/node_modules/.pnpm/registry.npmjs.org+styled-components@5.3.9_react-dom@18.2.0_react-is@18.2.0_react@18.2.0/node_modules/styled-components/dist/styled-components.cjs.js",
       "@modern-js/runtime/plugins": "/home/runner/work/resume/resume/node_modules/.modern-js/.runtime-exports/plugins.js",
-      "@modern-js/utils/ssr": "/home/runner/work/resume/resume/node_modules/.pnpm/registry.npmjs.org+@modern-js+utils@2.12.0_react-dom@18.2.0_react-router-dom@6.10.0_react@18.2.0/node_modules/@modern-js/utils/dist/ssr.js",
       "@_modern_js_internal": "/home/runner/work/resume/resume/node_modules/.modern-js",
       "@_modern_js_src": "/home/runner/work/resume/resume/src",
       "@": "/home/runner/work/resume/resume/src",
-      "@shared": "/home/runner/work/resume/resume/shared"
+      "@shared": "/home/runner/work/resume/resume/shared",
+      "@modern-js/utils/runtime-node$": "/home/runner/work/resume/resume/node_modules/.pnpm/registry.npmjs.org+@modern-js+utils@2.25.1_react-dom@18.2.0_react@18.2.0/node_modules/@modern-js/utils/dist/cjs/runtime-node/index.js"
     },
-    "globalVars": {
-      "process.env.IS_REACT18": "true"
-    },
+    "globalVars": [
+      {
+        "process.env.IS_REACT18": "true"
+      },
+      null
+    ],
     "preEntry": [],
     "compileJsDataURI": true,
     "define": {},
     "entries": {
       "index": "./src/App.tsx"
     },
+    "mainEntryName": "main",
     "enableAsyncEntry": false,
     "disableDefaultEntries": true,
     "entriesDir": "./src",
     "configDir": "./config",
     "include": [
+      {},
+      {},
+      {},
       "/home/runner/work/resume/resume/node_modules/.modern-js"
     ]
   },
   "tools": {
-    "babel": [
-      null,
-      null
-    ],
-    "cssExtract": {
-      "loaderOptions": {},
-      "pluginOptions": {}
+    "styledComponents": {
+      "topLevelImportPaths": [
+        "@modern-js/runtime/styled"
+      ]
     },
     "tsChecker": {
       "issue": {
@@ -56,6 +60,10 @@
           }
         ]
       }
+    },
+    "cssExtract": {
+      "loaderOptions": {},
+      "pluginOptions": {}
     },
     "htmlPlugin": [
       null,
@@ -90,6 +98,7 @@
     "legalComments": "linked",
     "cleanDistPath": true,
     "svgDefaultExport": "url",
+    "disableSvgr": false,
     "disableCssExtract": false,
     "disableMinimize": false,
     "disableSourceMap": true,
@@ -124,6 +133,7 @@
     "mountId": "root",
     "crossorigin": false,
     "disableHtmlFolder": true,
+    "scriptLoading": "defer",
     "title": "resume",
     "meta": {
       "charset": {
@@ -183,7 +193,15 @@
       },
       "usePlugins": [
         {
-          "name": "@modern-js/plugin-initialize"
+          "name": "@modern-js/plugin-initialize",
+          "post": [
+            "@modern-js/plugin-ssr",
+            "@modern-js/plugin-document",
+            "@modern-js/plugin-state",
+            "@modern-js/plugin-router",
+            "@modern-js/plugin-router-v5",
+            "@modern-js/plugin-polyfill"
+          ]
         },
         {
           "name": "@modern-js/plugin-analyze"
