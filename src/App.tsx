@@ -62,7 +62,7 @@ const App = () => {
                 <GithubIcon size="22" fill="#fff" />
               </a>
               <a
-                href="https://aboutme-9ua.pages.dev/"
+                href="https://a145789.github.io/aboutme"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="home page"
