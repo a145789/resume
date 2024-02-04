@@ -12,7 +12,7 @@
       "@_modern_js_src": "/home/runner/work/resume/resume/src",
       "@": "/home/runner/work/resume/resume/src",
       "@shared": "/home/runner/work/resume/resume/shared",
-      "@modern-js/runtime-utils/node$": "/home/runner/work/resume/resume/node_modules/.pnpm/@modern-js+runtime-utils@2.46.1_react-dom@18.2.0_react@18.2.0/node_modules/@modern-js/runtime-utils/dist/cjs/node/index.js"
+      "@modern-js/utils/runtime-node$": "/home/runner/work/resume/resume/node_modules/.pnpm/@modern-js+utils@2.25.1_react-dom@18.2.0_react@18.2.0/node_modules/@modern-js/utils/dist/cjs/runtime-node/index.js"
     },
     "globalVars": [
       {
@@ -20,6 +20,9 @@
       },
       null
     ],
+    "preEntry": [],
+    "compileJsDataURI": true,
+    "define": {},
     "entries": {
       "index": "./src/App.tsx"
     },
@@ -47,8 +50,20 @@
           {
             "file": "**/src/**/*"
           }
+        ],
+        "exclude": [
+          {
+            "file": "**/*.(spec|test).ts"
+          },
+          {
+            "file": "**/node_modules/**/*"
+          }
         ]
       }
+    },
+    "cssExtract": {
+      "loaderOptions": {},
+      "pluginOptions": {}
     },
     "htmlPlugin": [
       null,
@@ -60,29 +75,66 @@
   "output": {
     "distPath": {
       "root": "dist",
-      "html": "",
       "js": "static/js",
       "css": "static/css",
+      "svg": "static/svg",
+      "font": "static/font",
+      "html": "",
+      "wasm": "static/wasm",
+      "image": "static/image",
+      "media": "static/media",
       "server": "bundles",
       "worker": "worker"
     },
+    "filename": {},
+    "charset": "ascii",
+    "polyfill": "off",
+    "dataUriLimit": {
+      "svg": 10000,
+      "font": 10000,
+      "image": 10000,
+      "media": 10000
+    },
+    "legalComments": "linked",
     "cleanDistPath": true,
-    "disableNodePolyfill": true,
-    "enableInlineRouteManifests": true,
-    "disableInlineRouteManifests": false,
-    "ssg": true,
+    "svgDefaultExport": "url",
+    "disableSvgr": false,
+    "disableCssExtract": false,
+    "disableMinimize": false,
     "disableSourceMap": true,
-    "assetPrefix": "./",
-    "polyfill": "off"
+    "disableTsChecker": false,
+    "disableFilenameHash": false,
+    "disableCssModuleExtension": false,
+    "disableInlineRuntimeChunk": false,
+    "enableAssetFallback": false,
+    "enableAssetManifest": false,
+    "enableLatestDecorators": false,
+    "enableCssModuleTSDeclaration": false,
+    "enableInlineScripts": false,
+    "enableInlineStyles": false,
+    "disableNodePolyfill": true,
+    "ssg": true,
+    "assetPrefix": "./"
   },
   "server": {
     "baseUrl": "/",
     "port": 8080
   },
-  "dev": {},
+  "dev": {
+    "hmr": true,
+    "https": false,
+    "assetPrefix": "/",
+    "startUrl": false,
+    "progressBar": true,
+    "host": "0.0.0.0"
+  },
   "html": {
-    "title": "resume",
+    "inject": "head",
     "mountId": "root",
+    "crossorigin": false,
+    "disableHtmlFolder": true,
+    "scriptLoading": "defer",
+    "title": "resume",
     "meta": {
       "charset": {
         "charset": "utf-8"
@@ -97,8 +149,7 @@
       "imagemode": "force",
       "wap-font-scale": "no",
       "format-detection": "telephone=no"
-    },
-    "disableHtmlFolder": true
+    }
   },
   "plugins": [
     {
@@ -154,9 +205,6 @@
         },
         {
           "name": "@modern-js/plugin-analyze"
-        },
-        {
-          "name": "@modern-js/server-build"
         },
         {
           "name": "@modern-js/plugin-lint"
