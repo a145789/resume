@@ -37,7 +37,10 @@ export default defineConfig(({ env }) => {
       webpack: (_, { addRules }) => {
         addRules({
           test: /\.pdf$/,
-          use: ['file-loader'],
+          type: 'asset/resource',
+          generator: {
+            filename: 'static/孟国栋-简历.pdf',
+          },
         });
       },
       htmlPlugin: {

@@ -57,6 +57,12 @@ export default function useResume() {
   /** 工作经历 */
   const workExperience: StepProps[] = [
     {
+      title: '繁翰信息技术（上海）有限公司',
+      subTitle: '2023年6月 - 至今',
+      description: '前端工程师',
+      icon: <CompanyIcon />,
+    },
+    {
       title: '纬创软件有限公司',
       subTitle: '2021/9 - 2023/3',
       description: '前端工程师',
@@ -79,14 +85,24 @@ export default function useResume() {
   /** 技术技能 */
   const skills = [
     '熟练掌握 HTML、CSS、JavaScript 等前端端基础知识',
-    '熟练掌握 Vue2、Vue3 全家桶，深入了解 Vue3 响应式源码',
+    '熟练掌握 Vue2、Vue3 全家桶，了解 Vue3 响应式源码',
     '熟练使用 React 全家桶开发后台、H5 项目',
     '熟练掌握 TypeScript ，能够应对复杂的类型体系',
     '熟练使用 ElementUI，VantUI，Arco Design 等 PC、移动端 UI 框架，熟悉 TailwindCss UnoCss 等 CSS 框架',
-    '熟悉 Vite、Webpack 等构建工具，了解 Vite 插件编写流程',
-    '了解 Node.js，具备编写各类脚本和开发 Node.js 库的经验',
-    '了解 Koa mongodb 等技术栈',
-    '有小程序开发经验，熟悉小程序开发流程',
+    '熟悉 Node.js，具备编写各类脚本和开发 Node.js 库的经验',
+    '参与开源项目 Varlet 开发，封装 FieldDecorator 组件，统一 Input Select 通用样式',
+    <>
+      负责{' '}
+      <a
+        href="https://github.com/varletjs/varlet-release"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[#3a7afe] underline underline-offset-8"
+      >
+        varlet-release
+      </a>{' '}
+      的基础维护，可以便捷的发布前端库版本号及生成changelog
+    </>,
   ];
 
   /** 技能评分 */
@@ -133,7 +149,7 @@ export default function useResume() {
         '封装 sortablejs 为 hooks 方便使用。',
         '使用 Selection API 封装文字溢出时展示 Tooltip 组件。',
         '解决 Vue Class 迁移至 Vite 时， Typescript 对 Class 兼容问题。',
-        '使用 node.js 封装 rebase merge 脚本快速 合并分支，相对于手动合并提高了50%的开发效率。',
+        '使用 node.js 封装了一些实用脚本。',
       ],
     },
     {

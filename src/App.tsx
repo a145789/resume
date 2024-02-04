@@ -4,7 +4,7 @@ import 'tailwindcss/utilities.css';
 import './index.css';
 import { Toaster } from 'react-hot-toast';
 import Steps from 'rc-steps';
-import resumePdf from '@/assets/resume.pdf';
+import resumePdf from '@/assets/孟国栋-简历.pdf';
 import GithubIcon from '@/components/github-icon';
 import HomePageIcon from '@/components/home-page-icon';
 import 'rc-steps/assets/index.css';
@@ -62,7 +62,7 @@ const App = () => {
                 <GithubIcon size="22" fill="#fff" />
               </a>
               <a
-                href="https://aboutme-9ua.pages.dev/"
+                href="https://a145789.github.io/aboutme/"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="home page"
@@ -94,8 +94,8 @@ const App = () => {
 
             <SectionBox title="技术技能">
               <ul>
-                {skills.map(item => (
-                  <li key={item} className="list-disc list-inside mb-1.5">
+                {skills.map((item, index) => (
+                  <li key={index} className="list-disc list-inside mb-1.5">
                     {item}
                   </li>
                 ))}
