@@ -36,8 +36,13 @@ const App = () => {
           <div className="p-[30px] bg-[#00bc8a] text-[#fff] flex flex-col justify-center items-center">
             <div className="py-2 px-4 text-[36px] font-[500]">孟国栋</div>
 
-            <div className="text-[22px] py-2 px-4 border-solid border-t-[1px] border-[#00a982]">
-              前端开发工程师
+            <div className="px-4 border-solid border-t-[1px] border-[#00a982] text-center">
+              <div className="text-[22px] py-2">前端开发工程师</div>
+              <div className="text-[14px]">
+                Varlet Core Team
+                成员，负责部分表单组件、varlet-cli、varlet-release
+                的维护和迭代。
+              </div>
             </div>
 
             <div className="border-solid border-t-[1px] border-[#00a982] font-[18px] flex flex-col items-center mt-2">

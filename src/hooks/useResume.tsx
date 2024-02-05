@@ -90,7 +90,6 @@ export default function useResume() {
     '熟练掌握 TypeScript ，能够应对复杂的类型体系',
     '熟练使用 ElementUI，VantUI，Arco Design 等 PC、移动端 UI 框架，熟悉 TailwindCss UnoCss 等 CSS 框架',
     '熟悉 Node.js，具备编写各类脚本和开发 Node.js 库的经验',
-    '参与开源项目 Varlet 开发，封装 FieldDecorator 组件，统一 Input Select 通用样式',
     <>
       负责{' '}
       <a
